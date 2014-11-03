@@ -1,0 +1,15 @@
+Source: u-boot-cubox-i
+Section: unknown
+Priority: extra
+Maintainer: unknown <unknown>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: https://github.com/SolidRun/u-boot-imx6
+#Vcs-Git: git://git.debian.org/collab-maint/u-boot-cuboxi.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/u-boot-cuboxi.git;a=summary
+
+Package: u-boot-cubox-i
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Boot-Loader for Cubox-i and Hummingboard
+ Port of U-Boot for the i.mx6-based Cubox-i and Hummingboard devices by SolidRun.
