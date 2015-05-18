@@ -17,5 +17,5 @@ override_dh_auto_configure:
 	make mx6_cubox-i_config
 
 override_dh_auto_install:
-	install -v -D -m 0755 SPL $(DESTDIR)/boot/cubox-i-spl.bin
+	install -v -D -m 0644 SPL $(DESTDIR)/boot/cubox-i-spl.bin
 	install -v -D -m 0644 u-boot.img $(DESTDIR)/boot/u-boot.img
