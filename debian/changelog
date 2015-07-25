@@ -1,3 +1,9 @@
+u-boot-cubox-i (2013.10.1436769404-1) stable; urgency=medium
+
+  * improve system stability
+
+ -- unknown <privacy@not.given>  Sun, 26 Jul 2015 05:29:39 +0800
+
 u-boot-cubox-i (2013.10.1431323917-1) stable; urgency=medium
 
   * support 4x4 SoM
