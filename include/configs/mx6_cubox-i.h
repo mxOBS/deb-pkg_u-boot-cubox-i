@@ -70,6 +70,7 @@
 #define CONFIG_SYS_L2_PL310
 
 /* SATA Configuration */
+#define CONFIG_CMD_SATA
 #ifdef CONFIG_CMD_SATA
 #define CONFIG_DWC_AHSATA
 #define CONFIG_SYS_SATA_MAX_DEVICE      1
@@ -111,6 +112,8 @@
 #define CONFIG_ETHPRIME			"FEC"
 #define CONFIG_PHYLIB
 #define CONFIG_PHY_ATHEROS
+#define ATHEROS_QUIRK_SMARTEEE
+#define CONFIG_TFTP_TSIZE
 #endif
 
 /* Framebuffer */
@@ -119,7 +122,7 @@
 #define CONFIG_VIDEO_IPUV3
 #define CONFIG_IPUV3_CLK 260000000
 #define CONFIG_CFB_CONSOLE
-#define CONFIG_CFB_CONSOLE_ANSI
+#undef CONFIG_CFB_CONSOLE_ANSI
 #define CONFIG_VGA_AS_SINGLE_DEVICE
 #define CONFIG_VIDEO_BMP_RLE8
 #define CONFIG_IMX_HDMI
@@ -140,6 +143,7 @@
 #define CONFIG_USB_EHCI
 #define CONFIG_USB_EHCI_MX6
 #define CONFIG_EHCI_IS_TDI
+#define CONFIG_EHCI_HCD_INIT_AFTER_RESET
 #define CONFIG_USB_STORAGE
 #define CONFIG_USB_HOST_ETHER
 #define CONFIG_USB_ETHER_ASIX
@@ -196,7 +200,7 @@
                                 "mmc write ${loadaddr} 0x2 ${fw_sz}; " \
                         "fi; "  \
                 "fi;\0" \
-        "mmcargs=setenv bootargs console=${console},${baudrate} " \
+        "mmcargs=setenv bootargs quiet console=${console},${baudrate} " \
                 "root=${mmcroot};\0" \
         "loadbootscript=" \
                 "load mmc ${mmcdev}:${mmcpart} ${loadaddr} ${file_prefix}${script};\0" \
@@ -209,8 +213,10 @@
                 "fi; " \
                 "if test ${board} = mx6-cubox-i; then " \
                         "setenv fdt_file ${fdt_prefix}-cubox-i.dtb; " \
-                "else " \
+                "elif test ${board} = mx6-hummingboard; then " \
                         "setenv fdt_file ${fdt_prefix}-hummingboard.dtb; " \
+                "else " \
+                        "setenv fdt_file ${fdt_prefix}-hummingboard2.dtb; " \
                 "fi;\0" \
         "loadbootenv=load mmc ${mmcdev}:${mmcpart} ${loadaddr} ${file_prefix}${bootenv};\0" \
         "loadfdt=if test ${boottype} = mmc; then " \
