@@ -1,3 +1,9 @@
+u-boot-cubox-i (2013.10.1436769404-2) stable; urgency=medium
+
+  * enable splash-screen support - used by openSUSE
+
+ -- unknown <privacy@not.given>  Mon, 03 Aug 2015 22:53:15 +0800
+
 u-boot-cubox-i (2013.10.1436769404-1) stable; urgency=medium
 
   * improve system stability

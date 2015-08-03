@@ -1,6 +1,6 @@
 --- a/include/configs/mx6_cubox-i.h
 +++ b/include/configs/mx6_cubox-i.h
-@@ -176,8 +176,10 @@
+@@ -180,8 +180,10 @@
          "splashpos=m,m\0" \
          "fdt_high=0xffffffff\0" \
          "initrd_high=0xffffffff\0" \
@@ -12,7 +12,7 @@
          "ip_dyn=yes\0" \
          "mmcdev=" __stringify(CONFIG_SYS_MMC_ENV_DEV) "\0" \
          "mmcpart=1\0" \
-@@ -236,6 +238,7 @@
+@@ -242,6 +244,7 @@
                  "if test -n ${ramdisk_file}; then " \
  		    "if run loadramdisk; then " \
  			"echo Loaded ${ramdisk_file}; " \
@@ -20,7 +20,7 @@
  		    "else " \
  			"setenv ramdisk_addr -; " \
  		    "fi; " \
-@@ -373,4 +376,7 @@
+@@ -379,4 +382,7 @@
  #define CONFIG_CMD_CACHE
  #endif
  
