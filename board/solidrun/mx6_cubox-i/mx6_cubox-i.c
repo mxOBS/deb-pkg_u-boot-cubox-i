@@ -470,15 +470,15 @@ static void detect_board(void)
 #if defined(CONFIG_MX6QDL)
 	MX6QDL_SET_PAD(PAD_KEY_ROW1__GPIO_4_9, MUX_PAD_CTRL(UART_PAD_CTRL));
 	MX6QDL_SET_PAD(PAD_EIM_DA4__GPIO_3_4, MUX_PAD_CTRL(UART_PAD_CTRL));
-	MX6QDL_SET_PAD(PAD_SD4_DAT0__GPIO_2_8, MUX_PAD_CTRL(UART_PAD_CTRL));
+	MX6QDL_SET_PAD(PAD_SD4_DAT3__GPIO_2_11, MUX_PAD_CTRL(UART_PAD_CTRL));
 #endif
 	gpio_direction_input(IMX_GPIO_NR(4, 9));
 	gpio_direction_input(IMX_GPIO_NR(3, 4));
-	gpio_direction_input(IMX_GPIO_NR(2, 8));
+	gpio_direction_input(IMX_GPIO_NR(2, 11));
 
 	val1 = gpio_get_value(IMX_GPIO_NR(4, 9));
 	val2 = gpio_get_value(IMX_GPIO_NR(3, 4));
-	val3 = gpio_get_value(IMX_GPIO_NR(2, 8));
+	val3 = gpio_get_value(IMX_GPIO_NR(2, 11));
 
 	/*
 	 * Machine selection -
