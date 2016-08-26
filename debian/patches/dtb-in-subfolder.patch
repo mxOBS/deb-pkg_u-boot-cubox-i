@@ -1,0 +1,29 @@
+--- a/include/configs/mx6_cubox-i.h
++++ b/include/configs/mx6_cubox-i.h
+@@ -176,6 +176,7 @@
+         "bootfile=auto\0" \
+         "bootenv=uEnv.txt\0" \
+         "boot_prefixes=/ /boot/\0" \
++        "fdt_prefixes=/ /dtb/\0" \
+         "console=ttymxc0\0" \
+         "splashpos=m,m\0" \
+         "fdt_high=0xffffffff\0" \
+@@ -222,10 +223,14 @@
+                 "fi;\0" \
+         "loadbootenv=load mmc ${mmcdev}:${mmcpart} ${loadaddr} ${file_prefix}${bootenv};\0" \
+         "loadfdt=if test ${boottype} = mmc; then " \
+-                     "load mmc ${mmcdev}:${mmcpart} ${fdt_addr} ${file_prefix}${fdt_file}; " \
+-		"else " \
+-                     "${get_cmd} ${fdt_addr} ${fdt_file}; " \
+-		"fi;\0 " \
++				"for prefix in ${fdt_prefixes}; do " \
++					"if load mmc ${mmcdev}:${mmcpart} ${fdt_addr} ${file_prefix}${prefix}${fdt_file}; then " \
++						"exit; " \
++					"fi; " \
++				"done; " \
++			"else " \
++				"${get_cmd} ${fdt_addr} ${fdt_file}; " \
++			"fi;\0 " \
+         "loadramdisk=if test ${boottype} = mmc; then " \
+                      "load mmc ${mmcdev}:${mmcpart} ${ramdisk_addr} ${file_prefix}${ramdisk_file}; " \
+ 		"else " \
