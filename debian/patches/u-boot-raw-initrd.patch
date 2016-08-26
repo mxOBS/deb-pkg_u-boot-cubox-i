@@ -12,7 +12,7 @@
          "ip_dyn=yes\0" \
          "mmcdev=" __stringify(CONFIG_SYS_MMC_ENV_DEV) "\0" \
          "mmcpart=1\0" \
-@@ -242,6 +244,7 @@
+@@ -243,6 +245,7 @@
                  "if test -n ${ramdisk_file}; then " \
  		    "if run loadramdisk; then " \
  			"echo Loaded ${ramdisk_file}; " \
@@ -20,7 +20,7 @@
  		    "else " \
  			"setenv ramdisk_addr -; " \
  		    "fi; " \
-@@ -379,4 +382,7 @@
+@@ -381,4 +384,7 @@
  #define CONFIG_CMD_CACHE
  #endif
  
