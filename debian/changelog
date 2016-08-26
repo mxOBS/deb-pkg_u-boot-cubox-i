@@ -1,4 +1,4 @@
-u-boot-cubox-i (2013.10.1464952045-1) UNRELEASED; urgency=low
+u-boot-cubox-i (2013.10.1464952045-1) stable; urgency=high
 
   * allow loading DTBs from subfolder
   * update
