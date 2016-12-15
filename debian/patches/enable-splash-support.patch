@@ -1,6 +1,6 @@
 --- a/include/configs/mx6_cubox-i.h
 +++ b/include/configs/mx6_cubox-i.h
-@@ -131,7 +131,7 @@
+@@ -135,7 +135,7 @@
  #undef CONFIG_SPLASH_SCREEN
  #undef CONFIG_SPLASH_SCREEN_ALIGN
  #define CONFIG_BMP_16BPP
