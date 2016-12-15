@@ -8,7 +8,15 @@
 
 # Uncomment this to turn on verbose mode.
 export DH_VERBOSE=1
+
+# include system information
+include /usr/share/dpkg/architecture.mk
+
+# cross-compile
+export CROSS_COMPILE=$(DEB_TARGET_GNU_TYPE)-
+
 export DESTDIR=$(CURDIR)/debian/u-boot-cubox-i
+
 
 %:
 	dh $@ --parallel

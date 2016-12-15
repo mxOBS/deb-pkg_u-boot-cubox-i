@@ -9,7 +9,7 @@ Homepage: https://github.com/SolidRun/u-boot-imx6
 #Vcs-Browser: http://git.debian.org/?p=collab-maint/u-boot-cubox-i.git;a=summary
 
 Package: u-boot-cubox-i
-Architecture: any
+Architecture: armel armhf
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Boot-Loader for Cubox-i and Hummingboard
  Port of U-Boot for the i.mx6-based Cubox-i and Hummingboard devices by SolidRun.
