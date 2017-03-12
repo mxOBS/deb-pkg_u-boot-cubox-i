@@ -1,3 +1,4 @@
 u-boot-raw-initrd.patch
 enable-splash-support.patch
 dtb-in-subfolder.patch
+suse-env-compat.patch
