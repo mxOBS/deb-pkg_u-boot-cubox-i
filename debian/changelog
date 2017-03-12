@@ -1,9 +1,10 @@
-u-boot-cubox-i (2013.10.1481820622-1) UNRELEASED; urgency=medium
+u-boot-cubox-i (2013.10.1488032441-2) stable; urgency=medium
 
   * update
   * Support for rev 1.5 SoM
+  * revised RAM detection
 
- -- Josua Mayer <privacy@not.given>  Thu, 15 Dec 2016 14:51:30 +0100
+ -- Josua Mayer <josua@linux.site>  Sun, 12 Mar 2017 15:53:29 +0100
 
 u-boot-cubox-i (2013.10.1464952045-1) stable; urgency=high
 
