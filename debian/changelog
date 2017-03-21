@@ -2,7 +2,7 @@ u-boot-cubox-i (2013.10.1490090926-1) stable; urgency=medium
 
   * a multitude of bug fixes courtesy of Jon Nettleton
 
- -- Josua Mayer <josua@linux>  Tue, 21 Mar 2017 14:47:34 +0100
+ -- Josua Mayer <josua.mayer97@gmail.com>  Tue, 21 Mar 2017 14:47:34 +0100
 
 u-boot-cubox-i (2013.10.1488032441-2) stable; urgency=medium
 
@@ -10,39 +10,39 @@ u-boot-cubox-i (2013.10.1488032441-2) stable; urgency=medium
   * Support for rev 1.5 SoM
   * revised RAM detection
 
- -- Josua Mayer <josua@linux.site>  Sun, 12 Mar 2017 15:53:29 +0100
+ -- Josua Mayer <josua.mayer97@gmail.com>  Sun, 12 Mar 2017 15:53:29 +0100
 
 u-boot-cubox-i (2013.10.1464952045-1) stable; urgency=high
 
   * allow loading DTBs from subfolder
   * update
 
- -- Josua Mayer <privacy@not.given>  Fri, 26 Aug 2016 21:41:11 +0200
+ -- Josua Mayer <josua.mayer97@gmail.com>  Fri, 26 Aug 2016 21:41:11 +0200
 
 u-boot-cubox-i (2013.10.1444737373-1) stable; urgency=high
 
   * update
 
- -- unknown <privacy@not.given>  Wed, 14 Oct 2015 14:20:46 +0200
+ -- Josua Mayer <josua.mayer97@gmail.com>  Wed, 14 Oct 2015 14:20:46 +0200
 
 u-boot-cubox-i (2013.10.1436769404-2) stable; urgency=medium
 
   * enable splash-screen support - used by openSUSE
 
- -- unknown <privacy@not.given>  Mon, 03 Aug 2015 22:53:15 +0800
+ -- Josua Mayer <josua.mayer97@gmail.com>  Mon, 03 Aug 2015 22:53:15 +0800
 
 u-boot-cubox-i (2013.10.1436769404-1) stable; urgency=medium
 
   * improve system stability
 
- -- unknown <privacy@not.given>  Sun, 26 Jul 2015 05:29:39 +0800
+ -- Josua Mayer <josua.mayer97@gmail.com>  Sun, 26 Jul 2015 05:29:39 +0800
 
 u-boot-cubox-i (2013.10.1431323917-1) stable; urgency=medium
 
   * support 4x4 SoM
   * support init ramdisks without uboot header
 
- -- unknown <privacy@not.given>  Fri, 15 May 2015 10:42:37 +0200
+ -- Josua Mayer <josua.mayer97@gmail.com>  Fri, 15 May 2015 10:42:37 +0200
 
 u-boot-cubox-i (2013.10.1426848782-1) stable; urgency=low
 
@@ -51,10 +51,10 @@ u-boot-cubox-i (2013.10.1426848782-1) stable; urgency=low
   * speed up boot if no display is connected
   * ...
 
- -- unknown <privacy@not.given>  Wed, 18 Mar 2015 15:26:46 +0100
+ -- Josua Mayer <josua.mayer97@gmail.com>  Wed, 18 Mar 2015 15:26:46 +0100
 
 u-boot-cubox-i (2013.10.1410869531-1) unstable; urgency=low
 
   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
 
- -- unknown <unknown>  Fri, 24 Oct 2014 22:22:19 +0200
+ -- Josua Mayer <josua.mayer97@gmail.com>  Fri, 24 Oct 2014 22:22:19 +0200
