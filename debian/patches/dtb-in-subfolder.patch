@@ -1,6 +1,6 @@
 --- a/include/configs/mx6_cubox-i.h
 +++ b/include/configs/mx6_cubox-i.h
-@@ -182,6 +182,7 @@
+@@ -195,6 +195,7 @@
          "bootfile=auto\0" \
          "bootenv=uEnv.txt\0" \
          "boot_prefixes=/ /boot/\0" \
@@ -8,7 +8,7 @@
          "console=ttymxc0\0" \
          "splashpos=m,m\0" \
          "fdt_high=0xffffffff\0" \
-@@ -228,10 +229,14 @@
+@@ -241,10 +242,14 @@
                  "fi;\0" \
          "loadbootenv=load mmc ${mmcdev}:${mmcpart} ${loadaddr} ${file_prefix}${bootenv};\0" \
          "loadfdt=if test ${boottype} = mmc; then " \
