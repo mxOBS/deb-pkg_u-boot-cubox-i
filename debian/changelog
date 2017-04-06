@@ -1,3 +1,9 @@
+u-boot-cubox-i (2013.10.1490279352-1) stable; urgency=medium
+
+  * update
+
+ -- Josua Mayer <josua.mayer97@gmail.com>  Thu, 06 Apr 2017 08:45:28 +0000
+
 u-boot-cubox-i (2013.10.1490090926-1) stable; urgency=medium
 
   * a multitude of bug fixes courtesy of Jon Nettleton
