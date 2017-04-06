@@ -113,7 +113,7 @@ static u32 get_ram_size_stride_test(u32 *base, u32 maxsize)
 	for (cnt = (maxsize - MEM_STRIDE); i > 0; cnt -= MEM_STRIDE) {
 		addr = (volatile u32 *)((u32)base + cnt);       /* pointer arith! */
 		sync ();
-		*addr = save[i--];
+		*addr = save[--i];
 		sync ();
 	}
 
@@ -265,7 +265,7 @@ int board_mmc_init(bd_t *bis)
 iomux_v3_cfg_t const ecspi3_pads[] = {
 	/* SS1 */
 	MX6_PAD_DISP0_DAT2__ECSPI3_MISO | MUX_PAD_CTRL(SPI_PAD_CTRL),
-	MX6_PAD_PAD_DISP0_DAT1__ECSPI3_MOSI | MUX_PAD_CTRL(SPI_PAD_CTRL),
+	MX6_PAD_DISP0_DAT1__ECSPI3_MOSI | MUX_PAD_CTRL(SPI_PAD_CTRL),
 	MX6_PAD_DISP0_DAT0__ECSPI3_SCLK | MUX_PAD_CTRL(SPI_PAD_CTRL),
 	MX6_PAD_DISP0_DAT3__GPIO_4_24   | MUX_PAD_CTRL(SPI_PAD_CTRL),
 };
